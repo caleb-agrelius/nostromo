@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnljlgu8fupqr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_foe42"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+layer = 100
+follow_viewport_enabled = true
+
+[node name="dev_console" type="Panel" parent="."]
+custom_minimum_size = Vector2(1000, 300)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="dev_label" type="Label" parent="dev_console"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Sample Text"
+label_settings = SubResource("LabelSettings_foe42")

@@ -1,0 +1,123 @@
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://dq5if3hoxffim"]
+
+[ext_resource type="FontFile" uid="uid://ddoe20tw28272" path="res://Scenes/new_font_file.tres" id="1_ak4nt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ak4nt"]
+bg_color = Color(0.194495, 0.635262, 0.844001, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1c5i6"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.3)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3cojx"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 1, 1, 0.75)
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+expand_margin_left = 2.0
+expand_margin_top = 2.0
+expand_margin_right = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g0s5a"]
+bg_color = Color(0.290196, 0.619608, 0.909804, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.868985, 0.868985, 0.868985, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(1, 1, 1, 0.6)
+shadow_size = 2
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kck6n"]
+bg_color = Color(0.470588, 0.72549, 0.960784, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_size = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_25w1n"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k506r"]
+bg_color = Color(0.290196, 0.619608, 0.909804, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jfugh"]
+bg_color = Color(0.0493693, 0.0589219, 0.0557143, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8khsj"]
+bg_color = Color(0.290196, 0.619608, 0.909804, 1)
+
+[resource]
+default_base_scale = 1.0
+default_font = ExtResource("1_ak4nt")
+default_font_size = 20
+/colors/scifiblue = Color(0.175748, 0.609285, 0.75936, 1)
+/fonts/scifi = ExtResource("1_ak4nt")
+/styles/scifistyle = SubResource("StyleBoxFlat_ak4nt")
+Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+Button/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+Button/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/align_to_largest_stylebox = 0
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 24
+Button/styles/disabled = SubResource("StyleBoxFlat_1c5i6")
+Button/styles/focus = SubResource("StyleBoxFlat_3cojx")
+Button/styles/hover = SubResource("StyleBoxFlat_g0s5a")
+Button/styles/normal = SubResource("StyleBoxFlat_kck6n")
+Button/styles/pressed = SubResource("StyleBoxFlat_25w1n")
+HBoxContainer/colors/scifiblue = Color(0.290196, 0.619608, 0.909804, 1)
+HBoxContainer/constants/separation = 4
+HBoxContainer/styles/scifiblue = SubResource("StyleBoxFlat_k506r")
+Panel/colors/scifiblue = Color(0.470588, 0.72549, 0.960784, 1)
+Panel/styles/panel = SubResource("StyleBoxFlat_jfugh")
+PanelContainer/colors/scifiblue = Color(0.196078, 0.635294, 0.843137, 1)
+VBoxContainer/colors/scifiblue = Color(0.196078, 0.635294, 0.843137, 1)
+VBoxContainer/constants/separation = 4
+VBoxContainer/styles/scifiblue = SubResource("StyleBoxFlat_8khsj")
