@@ -1,0 +1,4 @@
+[gd_resource type="Theme" format=3 uid="uid://kv7bp18l8mhm"]
+
+[resource]
+/colors/background_dev_console = Color(0.14901961, 0.78431374, 0.972549, 0.56078434)

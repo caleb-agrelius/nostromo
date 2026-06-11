@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bkmvfu2tt2ddc"]
+
+[ext_resource type="Script" uid="uid://dn0uci1opu4i3" path="res://Utils/interactables_list.gd" id="1_btpas"]
+
+[node name="Dev_Console" type="Control" unique_id=173896590]
+visible = false
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Console_Top_Container" type="HBoxContainer" parent="." unique_id=289433099]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Console_Container" type="VBoxContainer" parent="Console_Top_Container" unique_id=1199093480]
+custom_minimum_size = Vector2(900, 0)
+layout_mode = 2
+alignment = 2
+
+[node name="Console_Text" type="RichTextLabel" parent="Console_Top_Container/Console_Container" unique_id=234319413]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+fit_content = true
+scroll_following = true
+
+[node name="Console_Text_Input" type="LineEdit" parent="Console_Top_Container/Console_Container" unique_id=197981702]
+layout_mode = 2
+placeholder_text = ">"
+
+[node name="Interactables_Container" type="VBoxContainer" parent="Console_Top_Container" unique_id=1688672832]
+custom_minimum_size = Vector2(900, 50)
+layout_mode = 2
+
+[node name="Interactables_List" type="ItemList" parent="Console_Top_Container/Interactables_Container" unique_id=797402612]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+auto_width = true
+auto_height = true
+script = ExtResource("1_btpas")
+
+[connection signal="item_selected" from="Console_Top_Container/Interactables_Container/Interactables_List" to="Console_Top_Container/Interactables_Container/Interactables_List" method="_on_item_selected"]

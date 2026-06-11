@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dcn2a64utqsx0"]
+
+[ext_resource type="PackedScene" uid="uid://bch6w5kmd2ldw" path="res://Interactables/item.tscn" id="1_emyov"]
+[ext_resource type="PackedScene" uid="uid://ba0hsi68lev6j" path="res://Locations/spawn_point.tscn" id="2_3jt1p"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_emyov"]
+size = Vector3(10, 10, 7.62)
+
+[node name="Polaris_Container" type="Node3D" unique_id=694370568]
+
+[node name="Polaris" type="MeshInstance3D" parent="." unique_id=871020481]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.919962, 0)
+mesh = SubResource("BoxMesh_emyov")
+
+[node name="Label3D" type="Label3D" parent="Polaris" unique_id=1942757196]
+visible = false
+text = "Press E to Enter."
+
+[node name="Item" parent="Polaris" unique_id=1341268760 instance=ExtResource("1_emyov")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, -2.9724445, -7.23929)
+door_leads_to_scene = "hideout"
+door_leads_to_spawn_point = "inside_hideout"
+item_type = "Door"
+
+[node name="Spawn_Point" parent="." unique_id=709853757 instance=ExtResource("2_3jt1p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.976355)
+spawn_id = "outside_hideout"

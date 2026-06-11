@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bknbewdqoxo44"]
+
+[ext_resource type="Script" uid="uid://tbcso586cpjf" path="res://Game/game.gd" id="1_jcm6v"]
+[ext_resource type="PackedScene" uid="uid://xhe187sjj0wa" path="res://Game/Menu's/pause_menu.tscn" id="4_oomkl"]
+[ext_resource type="PackedScene" uid="uid://vnp08guhrvn5" path="res://Game/Menu's/main_menu.tscn" id="5_fwxkx"]
+
+[node name="Game" type="Node3D" unique_id=1244975553]
+script = ExtResource("1_jcm6v")
+
+[node name="Map_Container" type="Node" parent="." unique_id=316538720]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1385756634]
+
+[node name="Pause_Menu" parent="CanvasLayer" unique_id=113217349 instance=ExtResource("4_oomkl")]
+
+[node name="Main_Menu" parent="CanvasLayer" unique_id=30530931 instance=ExtResource("5_fwxkx")]
