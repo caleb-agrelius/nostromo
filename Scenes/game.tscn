@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bknbewdqoxo44"]
+
+[ext_resource type="Script" uid="uid://tbcso586cpjf" path="res://Scripts/game.gd" id="1_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://xhe187sjj0wa" path="res://Scenes/pause_menu.tscn" id="2_3dryh"]
+[ext_resource type="PackedScene" uid="uid://vnp08guhrvn5" path="res://Scenes/main_menu.tscn" id="3_wowpa"]
+
+[node name="Game" type="Node3D" unique_id=1244975553]
+script = ExtResource("1_wrm1d")
+
+[node name="Map_Container" type="Node3D" parent="." unique_id=515240346]
+
+[node name="Post_Process" type="CanvasLayer" parent="." unique_id=1385756635]
+layer = 127
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Post_Process" unique_id=1385756636]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1385756634]
+
+[node name="Pause_Menu" parent="CanvasLayer" unique_id=113217349 instance=ExtResource("2_3dryh")]
+
+[node name="Main_Menu" parent="CanvasLayer" unique_id=30530931 instance=ExtResource("3_wowpa")]

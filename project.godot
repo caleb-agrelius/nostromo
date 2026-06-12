@@ -13,7 +13,6 @@ config_version=5
 config/name="Nostromo"
 run/main_scene="uid://bknbewdqoxo44"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://Game/icon.svg"
 
 [autoload]
 

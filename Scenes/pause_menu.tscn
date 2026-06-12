@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://xhe187sjj0wa"]
+
+[ext_resource type="Script" uid="uid://odxulcx85kag" path="res://Scripts/pause_menu.gd" id="1_sjx34"]
+
+[node name="Pause_Menu" type="Control" unique_id=113217349]
+visible = false
+top_level = true
+z_index = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sjx34")
+
+[node name="Resume_Button" type="Button" parent="." unique_id=1746495548]
+top_level = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -64.0
+offset_right = 99.0
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Resume"
+
+[node name="Quit_Button" type="Button" parent="." unique_id=871239800]
+top_level = true
+layout_mode = 0
+offset_left = 850.0
+offset_top = 601.0
+offset_right = 1061.0
+offset_bottom = 682.0
+text = "Quit"
